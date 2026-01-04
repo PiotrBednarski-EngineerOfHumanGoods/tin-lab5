@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - JavaScript Programowanie Obiektowe</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 30px;
+        }
+        .task {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .output {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Consolas', monospace;
+            white-space: pre-wrap;
+            margin-top: 10px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .info {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laboratorium 5 - JavaScript Programowanie Obiektowe</h1>
+    
+    <div class="task">
+        <h2>Zadanie 1 - Samochody</h2>
+        <p class="info">Obiekt Auto z metodami do zarządzania cenami oraz tablica samochodów</p>
+        <button onclick="testAuto()">Uruchom test samochodów</button>
+        <div id="output1" class="output"></div>
+    </div>
+    
+    <div class="task">
+        <h2>Zadanie 2 - Studenci</h2>
+        <p class="info">Klasy Ocena i Student z getterami i setterami</p>
+        <button onclick="testStudent()">Uruchom test studentów</button>
+        <div id="output2" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
